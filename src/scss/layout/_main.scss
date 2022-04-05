@@ -1,0 +1,44 @@
+// Main start
+.main {
+  max-width: 100%;
+  height: 100vh;
+  background: $color-white-100;
+}
+// Main End
+
+// Dashboard Start
+.dashboard {
+  width: 100%;
+  height: 100%;
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    padding-left: rem(5);
+  }
+
+  &__header {
+    background: green;
+  }
+
+  &-body {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 5px;
+    margin-top: 5px;
+
+    &__left {
+      background: yellow;
+
+      .sidebar.open .dashboard {
+        grid-template-columns: 250px 1fr;
+      }
+    }
+
+    &__right {
+      background: blue;
+    }
+  }
+}
+// Dashboard End

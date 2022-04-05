@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Rohit Kumar">
+  <meta name="description" content="Your Project Description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+  <title>Dashboard</title>
+
+  <!-- Boxicons CDN Link Start -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Boxicons CDN Link End -->
+
+  <!-- Bootstrap Css start  -->
+  <link rel="stylesheet" href="scss/vendors/bootstrap.min.css" />
+  <!-- Bootstrap Css End  -->
+
+  <!-- Custom CSS Start -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Custom CSS End -->
+</head>
+
+<body>
+  <!-- Main Start -->
+  <main class="main">
+    <!-- Dashboard Start -->
+    <section class="dashboard">
+
+      <!-- Left Start  -->
+      <nav class="sidebar">
+        <div class="logo-details">
+          <i class="bx bxl-c-plus-plus icon"></i>
+          <div class="logo_name">Ricky</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+
+        <ul class="nav-list">
+          <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search..." />
+            <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-grid-alt"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-user"></i>
+              <span class="links_name">User</span>
+            </a>
+            <span class="tooltip">User</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-chat"></i>
+              <span class="links_name">Messages</span>
+            </a>
+            <span class="tooltip">Messages</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-pie-chart-alt-2"></i>
+              <span class="links_name">Analytics</span>
+            </a>
+            <span class="tooltip">Analytics</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-folder"></i>
+              <span class="links_name">File Manager</span>
+            </a>
+            <span class="tooltip">Files</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cart-alt"></i>
+              <span class="links_name">Order</span>
+            </a>
+            <span class="tooltip">Order</span>
+
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+          </li>
+          <li class="profile">
+            <div class="profile-details">
+              <img src="profile.jpg" alt="profileImg" />
+              <div class="name_job">
+                <div class="name">Prem Shahi</div>
+                <div class="job">Web designer</div>
+              </div>
+            </div>
+            <i class="bx bx-log-out" id="log_out"></i>
+          </li>
+        </ul>
+      </nav>
+      <!-- Left End  -->
+
+      <!-- Right Start  -->
+      <section class="dashboard__right">
+        <!-- Header Start  -->
+        <header class="dashboard__header">Header</header>
+        <!-- Header End  -->
+
+        <!-- Middle Start  -->
+        <div class="dashboard-body">
+
+          <section class="dashboard-body__left">
+            Left
+          </section>
+
+          <article class="dashboard-body__right">
+            Right
+          </article>
+
+
+        </div>
+        <!-- Middle End  -->
+
+
+      </section>
+      <!-- Right End  -->
+    </section>
+    <!-- Dashboard End -->
+  </main>
+  <!-- Main End -->
+
+
+  <script src="scss/vendors/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
