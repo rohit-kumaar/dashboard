@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Rohit Kumar">
-  <meta name="description" content="Your Project Description">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="author" content="Rohit Kumar" />
+  <meta name="description" content="Your Project Description" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
   <title>Dashboard</title>
 
@@ -28,112 +28,132 @@
   <main class="main">
     <!-- Dashboard Start -->
     <section class="dashboard">
-
       <!-- Left Start  -->
-      <nav class="sidebar">
-        <div class="logo-details">
-          <i class="bx bxl-c-plus-plus icon"></i>
-          <div class="logo_name">Ricky</div>
-          <i class="bx bx-menu" id="btn"></i>
-        </div>
-
-        <ul class="nav-list">
-          <li>
-            <i class="bx bx-search"></i>
-            <input type="text" placeholder="Search..." />
-            <span class="tooltip">Search</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-grid-alt"></i>
-              <span class="links_name">Dashboard</span>
-            </a>
-            <span class="tooltip">Dashboard</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-user"></i>
-              <span class="links_name">User</span>
-            </a>
-            <span class="tooltip">User</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-chat"></i>
-              <span class="links_name">Messages</span>
-            </a>
-            <span class="tooltip">Messages</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-pie-chart-alt-2"></i>
-              <span class="links_name">Analytics</span>
-            </a>
-            <span class="tooltip">Analytics</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-folder"></i>
-              <span class="links_name">File Manager</span>
-            </a>
-            <span class="tooltip">Files</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-cart-alt"></i>
-              <span class="links_name">Order</span>
-            </a>
-            <span class="tooltip">Order</span>
-
-            <a href="#">
+      <aside class="dashboard__left">
+        <nav>
+          <ul>
+            <li>
+              <i class="bx bx-home"></i>
+              <a href="javascript:void(0)"> Home </a>
+            </li>
+            <li>
+              <i class="bx bxs-dashboard"></i>
+              <a href="javascript:void(0)"> Dashboard </a>
+            </li>
+            <li>
+              <i class="bx bx-shopping-bag"></i>
+              <a href="javascript:void(0)"> Orders </a>
+            </li>
+            <li>
+              <i class="bx bx-rupee"></i>
+              <a href="javascript:void(0)"> Payments </a>
+            </li>
+            <li>
               <i class="bx bx-cog"></i>
-              <span class="links_name">Setting</span>
-            </a>
-            <span class="tooltip">Setting</span>
-          </li>
-          <li class="profile">
-            <div class="profile-details">
-              <img src="profile.jpg" alt="profileImg" />
-              <div class="name_job">
-                <div class="name">Prem Shahi</div>
-                <div class="job">Web designer</div>
-              </div>
-            </div>
-            <i class="bx bx-log-out" id="log_out"></i>
-          </li>
-        </ul>
-      </nav>
+              <a href="javascript:void(0)"> Settings </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
       <!-- Left End  -->
 
       <!-- Right Start  -->
       <section class="dashboard__right">
         <!-- Header Start  -->
-        <header class="dashboard__header">Header</header>
+        <header class="dashboard__header">
+          <nav class="navbar navbar-expand-lg navbar-white bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">
+                <i class="bx bx-shopping-bag"></i>
+                <span class="ms-2 fw-bold"> Orders</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+
+
+                <form class="d-flex align-items-center">
+
+                  <!-- Search Start -->
+                  <input class="rounded-pill border border-1 border-secondary " type="search" placeholder="Search">
+                  <!-- Search End -->
+
+                  <!-- Notification Bell Start -->
+                  <i class='bx bxs-bell  mx-4 text-primary'>
+                    <span>9</span>
+                  </i>
+                  <!-- Notification Bell End -->
+
+                  <!-- Wallet Balance Start -->
+                  <i class='bx bxs-wallet-alt me-2 text-primary'></i>
+                  <div class="wallet d-flex align-items-center flex-column me-4">
+                    <span>0.00</span>
+                    <p> Wallet Balance</p>
+                  </div>
+                  <!-- Wallet Balance End -->
+
+                  <!-- Button Start  -->
+                  <a class="btn text-white me-4 rounded-pill" href="javascript:void(0)">
+                    Recharge
+                  </a>
+                  <!-- Button End -->
+
+
+                  <!-- Email Dropdown Start  -->
+                  <i class='bx bx-envelope text-primary fw-bold'></i>
+                  <div class="dropdown">
+                    <input type="text" class="textBox" placeholder="Email_ID@gmail.com" readonly />
+
+                    <div class="option">
+                      <div onclick="show('xyz@gmail.com')">xyz@gmail.com</div>
+                      <div onclick="show('abc@gmail.com')">abc@gmail.com</div>
+                    </div>
+                  </div>
+                  <!-- Email Dropdown End  -->
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
         <!-- Header End  -->
 
         <!-- Middle Start  -->
         <div class="dashboard-body">
-
-          <section class="dashboard-body__left">
-            Left
-          </section>
+          <section class="dashboard-body__left">Left</section>
 
           <article class="dashboard-body__right">
-            Right
+            <section>
+              <h2>Customers Details</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, saepe. Sed provident libero in amet est
+                soluta, a temporibus aspernatur beatae totam vero at, rerum
+                facilis hic qui expedita explicabo. Nesciunt commodi ab amet
+                vero qui saepe sapiente eos inventore ratione quos sit
+                deleniti rerum neque nihil impedit, debitis autem! Neque,
+                optio saepe iste laudantium molestias repellendus ullam fugit
+                officia veritatis fuga fugiat? Numquam temporibus dolorum
+                ratione sequi nam placeat ullam, provident alias delectus
+                laudantium libero nesciunt voluptas voluptatum molestias
+                deserunt nihil iusto dolor expedita architecto laborum
+              </p>
+              <a href="javascript:void(0)">
+                Need help with Adding an Order?
+              </a>
+            </section>
           </article>
-
-
         </div>
         <!-- Middle End  -->
-
-
       </section>
       <!-- Right End  -->
     </section>
     <!-- Dashboard End -->
   </main>
   <!-- Main End -->
-
 
   <script src="scss/vendors/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

@@ -1,0 +1,52 @@
+.dropdown {
+  position: relative;
+  width: rem(230);
+  height: rem(40);
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #000;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 30;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+
+.dropdown.active::before {
+  top: 22px;
+  transform: rotate(-225deg);
+}
+
+.dropdown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.dropdown .option {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background: #fff;
+  display: none;
+  padding: rem(10);
+}
+
+.dropdown.active .option {
+  display: block;
+}
+
+.dropdown .option div:hover {
+  background: #62baea;
+  color: #fff;
+}

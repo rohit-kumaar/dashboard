@@ -1,0 +1,16 @@
+div.wallet {
+  line-height: rem(10);
+  span {
+    color: $color-info;
+  }
+  :is(span, p) {
+    font-size: rem(10);
+  }
+}
+
+form {
+  input {
+    width: rem(500);
+    padding: rem(5) rem(20);
+  }
+}
