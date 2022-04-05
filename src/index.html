@@ -32,23 +32,28 @@
       <aside class="dashboard__left">
         <nav>
           <ul>
-            <li>
+
+            <li data-page="home">
               <i class="bx bx-home"></i>
               <a href="javascript:void(0)"> Home </a>
             </li>
-            <li>
-              <i class="bx bxs-dashboard"></i>
+
+            <li data-page="dashboard">
+              <i class=" bx bxs-dashboard"></i>
               <a href="javascript:void(0)"> Dashboard </a>
             </li>
-            <li>
+
+            <li data-page="orders">
               <i class="bx bx-shopping-bag"></i>
               <a href="javascript:void(0)"> Orders </a>
             </li>
-            <li>
+
+            <li data-page="payment">
               <i class="bx bx-rupee"></i>
               <a href="javascript:void(0)"> Payments </a>
             </li>
-            <li>
+
+            <li data-page="settings">
               <i class="bx bx-cog"></i>
               <a href="javascript:void(0)"> Settings </a>
             </li>
@@ -76,7 +81,7 @@
 
 
 
-                <form class="d-flex align-items-center">
+                <form class="d-flex flex-wrap align-items-center ">
 
                   <!-- Search Start -->
                   <input class="rounded-pill border border-1 border-secondary " type="search" placeholder="Search">
@@ -123,7 +128,23 @@
 
         <!-- Middle Start  -->
         <div class="dashboard-body">
-          <section class="dashboard-body__left">Left</section>
+          <section class="dashboard-body__left">
+            <div id="home">
+              <h1 id="1">Home</h1>
+            </div>
+            <div id="dashboard">
+              <h1 id="2">Dashboard</h1>
+            </div>
+            <div id="orders">
+              <h1 id="3">Orders</h1>
+            </div>
+            <div id="payment">
+              <h1 id="4">Payment</h1>
+            </div>
+            <div id="settings">
+              <h1 id="5">Settings</h1>
+            </div>
+          </section>
 
           <article class="dashboard-body__right">
             <section>

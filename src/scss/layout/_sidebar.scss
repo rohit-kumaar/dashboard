@@ -15,7 +15,8 @@
             background: $color-white;
 
             :is(i, a) {
-              color: $color-black;
+              font-weight: 600;
+              color: $color-primary;
             }
           }
 
