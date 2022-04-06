@@ -11,7 +11,7 @@ dropdown.addEventListener("click", () => {
 
 // Single Page Start
 function showPage(page) {
-  document.querySelectorAll(".dashboard-body__left div").forEach((div) => {
+  document.querySelectorAll(".dashboard-body__left article").forEach((div) => {
     div.style.display = "none";
   });
 
@@ -19,7 +19,7 @@ function showPage(page) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("li").forEach((li) => {
+  document.querySelectorAll(".dashboard__left  ul li").forEach((li) => {
     li.onclick = function () {
       showPage(this.dataset.page);
     };

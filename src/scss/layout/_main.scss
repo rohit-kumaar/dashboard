@@ -10,6 +10,7 @@
 
   .bxs-bell {
     position: relative;
+    cursor: pointer;
     span {
       position: absolute;
       top: rem(-13);
@@ -52,8 +53,89 @@
     margin-top: rem(5);
 
     &__left {
-      div:not(:nth-child(3)) {
+      article:not(#orders) {
         display: none;
+      }
+
+      .orders {
+        padding-inline: rem(20);
+        &__header {
+          border-bottom: rem(2) solid $color-white-300;
+          ul {
+            gap: rem(40);
+            height: rem(75);
+            font-weight: 600;
+
+            li {
+              &:hover {
+                border-bottom: rem(5) solid $color-info;
+              }
+
+              a {
+                color: $color-black;
+                &:hover {
+                  color: $color-primary;
+                }
+              }
+            }
+          }
+        }
+
+        &__details {
+          .row {
+            .col {
+              label {
+                font-weight: 600;
+              }
+              div {
+                span {
+                  background: $color-primary;
+                  color: $color-white;
+                }
+              }
+            }
+          }
+        }
+
+        &__productDetails {
+          h2 {
+            font-weight: 700;
+          }
+          div {
+            label {
+              font-weight: 600;
+            }
+          }
+        }
+
+        &__item {
+          border-bottom: rem(2) solid $color-white-300;
+          color: $color-primary;
+          cursor: pointer;
+        }
+
+        &__weight {
+          width: rem(215);
+          float: right;
+          div {
+            div {
+              align-items: center;
+              justify-content: space-between;
+              &:first-child {
+                margin-bottom: rem(10);
+              }
+              input {
+                width: 40%;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        
+        &__nextbtn{
+          font-size: rem(14);
+          background: $color-primary;
+        }
       }
     }
 
