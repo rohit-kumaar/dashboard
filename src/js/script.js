@@ -27,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // Single Page End
 
-
-
 function showBody(page) {
   document.querySelectorAll(".orders section").forEach((section) => {
     section.style.display = "none";
