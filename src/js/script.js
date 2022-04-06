@@ -26,3 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // Single Page End
+
+
+
+function showBody(page) {
+  document.querySelectorAll(".orders section").forEach((section) => {
+    section.style.display = "none";
+  });
+
+  document.querySelector(`#${page}`).style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".orders header nav ul li").forEach((li) => {
+    li.onclick = function () {
+      showBody(this.dataset.page);
+    };
+  });
+});
